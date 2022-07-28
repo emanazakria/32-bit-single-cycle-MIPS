@@ -1,0 +1,157 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/EECE/summer courses/digital/MIPS
+vAdder
+!s110 1658775161
+!i10b 1
+!s100 3a=AdkoGfhTNBKOGK^M<e1
+IDMa_FFG<?GYE]mJ`l<`EO2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1658774528
+8.\Adder.v
+F.\Adder.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1658775160.000000
+!s107 .\Adder.v|
+!s90 .\Adder.v|
+!i113 1
+Z3 tCvgOpt 0
+n@adder
+vALU
+!s110 1658775168
+!i10b 1
+!s100 VJ5QnJMCDehfAH_Ga0G^e2
+I46RWjedS44=gn9FMzA2>E3
+R1
+R0
+w1657281732
+8.\ALU.v
+F.\ALU.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1658775168.000000
+!s107 .\ALU.v|
+!s90 .\ALU.v|
+!i113 1
+R3
+n@a@l@u
+vControl_Unit
+!s110 1658775184
+!i10b 1
+!s100 5JE8I^kHBi@T22zZNX7e21
+IL`6]Ao_VbmJj3Dog:FU9K0
+R1
+R0
+w1658775004
+8.\Control_Unit.v
+F.\Control_Unit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1658775184.000000
+!s107 .\Control_Unit.v|
+!s90 .\Control_Unit.v|
+!i113 1
+R3
+n@control_@unit
+vData_Memory
+!s110 1658775333
+!i10b 1
+!s100 9jlaJTXVG3L@DhbD5S]aN2
+IgcDgO_C=JM<G8``YAb3[E1
+R1
+R0
+w1658775331
+8.\Data_Memory.v
+F.\Data_Memory.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1658775333.000000
+!s107 .\Data_Memory.v|
+!s90 .\Data_Memory.v|
+!i113 1
+R3
+n@data_@memory
+vMUX
+!s110 1658775361
+!i10b 1
+!s100 @?;4Pk]=LFL1QgF0YKjFz0
+ITDB^0f]Wd8bFbY[SSRN2H1
+R1
+R0
+w1658774666
+8.\MUX.v
+F.\MUX.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1658775361.000000
+!s107 .\MUX.v|
+!s90 .\MUX.v|
+!i113 1
+R3
+n@m@u@x
+vPC
+!s110 1658775366
+!i10b 1
+!s100 S0b]JlOg>SM`G<B6h8IoT3
+IHM9QCT:C;ibHlYLo^Ua^Q0
+R1
+R0
+w1657281777
+8.\PC.v
+F.\PC.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1658775366.000000
+!s107 .\PC.v|
+!s90 .\PC.v|
+!i113 1
+R3
+n@p@c
+vRegister_File
+!s110 1658775536
+!i10b 1
+!s100 N^i1eO1Og[4eSCc[io=kf3
+IkI_gPEcAiE1MhLFNG=JDS0
+R1
+R0
+w1658775525
+8.\Register_File.v
+F.\Register_File.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1658775536.000000
+!s107 .\Register_File.v|
+!s90 .\Register_File.v|
+!i113 1
+R3
+n@register_@file
