@@ -11,8 +11,7 @@ module Instruction_Memory #
 
 	initial 
 		begin
-				//??
-			$readmemh("   ,txt",memory)
+			$readmemh("   .txt",memory)
 		end
 		
 	always@(PC)	
