@@ -1,7 +1,7 @@
 module Instruction_Memory #
 (
-		parameter   WIDTH      	= 	32 				,
-		parameter   DEPTH 		= 	100	
+		parameter   WIDTH		= 	32 				,
+		parameter   DEPTH		= 	100	
 )
 (
 		input 	wire 	[WIDTH-1:0] PC 				,
@@ -11,7 +11,7 @@ module Instruction_Memory #
 
 	initial 
 		begin
-			$readmemh("   .txt",memory)
+			$readmemh("mem.txt",memory)
 		end
 		
 	always@(PC)	

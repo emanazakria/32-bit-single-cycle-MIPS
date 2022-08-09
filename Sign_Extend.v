@@ -1,4 +1,5 @@
-module Sign_Extend # 	(	parameter 	IN_WIDTH 	= 16 ,
+module Sign_Extend #	(
+							parameter 	IN_WIDTH 	= 16 ,
 							parameter 	OUT_WIDTH 	= 32
 						)
 						(

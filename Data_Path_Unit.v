@@ -1,11 +1,11 @@
-module Data_Path_Unit # (
+module Data_Path_Unit #	(
 							parameter 	WIDTH 	= 32  
 						)
 						(	
 							input 	wire 					CLK 	 		,
 							input 	wire 					RST 			,
-							input 	wire 	[WIDTH-1:0] 	Instruction 	,
-							input 	wire 	[WIDTH-1:0] 	ReadData 		,
+							input 	wire 	[WIDTH-1:0]		Instruction 	,
+							input 	wire 	[WIDTH-1:0]		ReadData 		,
 							input 	wire 	[2:0]			ALU_Control 	,
 							input 	wire					JMP 			,
 							input 	wire 					MemtoReg 		,
@@ -24,9 +24,9 @@ module Data_Path_Unit # (
 							wire 	[WIDTH-1:0] 	SrcB 				;
 							wire 	[WIDTH-1:0] 	WD3Result			;
 							
-							wire 	[4:0]			A1 					;
-							wire 	[4:0]			A2 					;
-							wire 	[4:0]			A3 					;
+							wire 	[4:0]			A1					;
+							wire 	[4:0]			A2					;
+							wire 	[4:0]			A3					;
 								
 						
 							wire 	[WIDTH-1:0] 	PC_in 				;
@@ -36,7 +36,7 @@ module Data_Path_Unit # (
 							
 							wire 	[WIDTH-1:0] 	SignImmShiftOut		;
 							wire 	[WIDTH-1:0] 	SignImm 			;
-							wire 	[27:0] 			JmpInsShiftOut 		;
+							wire 	[27:0]			JmpInsShiftOut 		;
 							
 							assign  A1 	= 	Instruction[25:21] 	;
 							assign  A2 	= 	Instruction[20:16] 	;
@@ -75,7 +75,7 @@ module Data_Path_Unit # (
 			
 		MUX	 WD3_MUX 
 			(	
-				.A		(ALU_Result) 	,
+				.A		(ALU_Result)	,
 				.B		(ReadData)		,
 				.Sel	(MemtoReg)		,
 				
@@ -108,7 +108,7 @@ module Data_Path_Unit # (
 			
 		MUX	 Data_MUX 
 			(	
-				.A		(WriteData) 	,
+				.A		(WriteData)		,
 				.B		(SignImm)		,
 				.Sel	(ALUSrc)		,
 				
@@ -117,7 +117,7 @@ module Data_Path_Unit # (
 			
 		MUX	 Plus_branch_MUX 
 			(	
-				.A		(PCPlus4) 				,
+				.A		(PCPlus4)				,
 				.B		(PCBranch)				,
 				.Sel	(PCSrc)					,
 				

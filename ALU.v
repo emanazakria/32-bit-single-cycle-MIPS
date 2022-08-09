@@ -47,7 +47,7 @@ always @(*)
 				end
 			
     default : 	begin
-					ALU_Result = {(DATA_WIDTH){1'b0}}			;
+					ALU_Result = {(DATA_WIDTH){1'b0}}	;
 				end
  endcase
 end

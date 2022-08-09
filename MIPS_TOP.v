@@ -15,25 +15,25 @@ module MIPS_TOP #	(
 						wire 					PCSrc 		;
 						wire 					RegDst 		;
 						wire 					RegWrite 	;
-						wire 					MemWrite 	;l
+						wire 					MemWrite 	;
 						wire 					Zero 		;
 						
-						wire 	[2:0] 			ALU_Control ;
+						wire 	[2:0]			ALU_Control ;
 						wire 	[WIDTH-1:0] 	Instruction	;
-						wire 	[WIDTH-1:0] 	PC 			;
+						wire 	[WIDTH-1:0] 	PC			;
 						wire 	[WIDTH-1:0] 	ALU_Result 	;
 						wire 	[WIDTH-1:0] 	WriteData 	;
 						wire 	[WIDTH-1:0] 	ReadData 	;
 
 Data_Memory 	DataMemory
 	(
-		.A			(ALU_Result) 	,
+		.A			(ALU_Result)	,
 		.WD			(WriteData)		,
 		.WE			(MemWrite)		,
-		.CLK		(CLK) 			,
+		.CLK		(CLK)			,
 		.RST		(RST)			,				
 		
-		.RD			(ReadData) 		,
+		.RD			(ReadData)		,
 		.TestValue	(TestValue)
 	);
 	
@@ -68,7 +68,7 @@ Data_Path_Unit 	DataPathUnit
 		.CLK			(CLK) 	 		,
 		.RST			(RST) 			,
 		.Instruction	(Instruction) 	,
-		.ReadData		(ReadData) 		,
+		.ReadData		(ReadData)		,
 		.ALU_Control	(ALU_Control) 	,
 		.JMP			(JMP) 			,
 		.MemtoReg		(MemtoReg) 		,

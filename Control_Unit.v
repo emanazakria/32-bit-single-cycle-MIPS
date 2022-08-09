@@ -2,12 +2,12 @@ module Control_Unit #	(
 							Instruction_Width 	= 32
 						)
 						(
-							input 	wire 	[Instruction_Width-1:0] 	Instruction 	,
-							input 	wire 								Zero 			,
+							input 	wire 	[Instruction_Width-1:0]		Instruction 	,
+							input 	wire								Zero 			,
 							
 							output 	reg 	[2:0]						ALU_Control		,
-							output 	reg 								JMP 			,
-							output 	reg 								MemtoReg		,
+							output 	reg									JMP 			,
+							output 	reg									MemtoReg		,
 							output 	reg 								MemWrite		,
 							output 	reg 								ALUSrc 			,
 							output 	reg 								PCSrc 			,
@@ -19,24 +19,24 @@ module Control_Unit #	(
 							localparam 	loadWord 		= 	6'b10_0011 	;
 							localparam 	StoreWord 		= 	6'b10_1011 	;
 							localparam 	rType	 		= 	6'b00_0000 	;
-							localparam 	addimmediate 	= 	6'b00_1000 	;
-							localparam 	branchifEqual	= 	6'b00_0100 	;
+							localparam 	addimmediate	=	6'b00_1000 	;
+							localparam 	branchifEqual	=	6'b00_0100 	;
 							localparam 	jump_inst 		= 	6'b00_0010 	;
 							
 							localparam 	ADD 			= 	6'b10_0000 	;
 							localparam 	SUB 			= 	6'b10_0010 	;
-							localparam 	SLT	 			= 	6'b10_1010 	;
-							localparam 	MUL		 		= 	6'b01_1100 	;
+							localparam 	SLT				= 	6'b10_1010 	;
+							localparam 	MUL				= 	6'b01_1100 	;
 							localparam 	AND				= 	6'b10_0100 	;
-							localparam 	OR	 			= 	6'b10_0101 	;
+							localparam 	OR				= 	6'b10_0101 	;
 							
 							wire 	[5:0] 	Opcode 	;
 							wire 	[5:0] 	Funct 	;
-							reg 			Branch 	;
+							reg				Branch 	;
 							reg 	[1:0]	ALUOp 	;
 							
 							assign 	Opcode 	= Instruction [Instruction_Width-1 : 26] 	;
-							assign 	Funct 	= Instruction [5 : 0] 						;
+							assign 	Funct 	= Instruction [5 : 0]						;
 				
 always @(*)
 	begin
@@ -142,7 +142,7 @@ always @ (*)
 								SLT 	: 	ALU_Control = 3'b110 	;
 								MUL 	: 	ALU_Control = 3'b101	;
 								AND 	: 	ALU_Control = 3'b000 	;
-								OR	 	: 	ALU_Control = 3'b001 	;
+								OR		: 	ALU_Control = 3'b001 	;
 								default	: 	ALU_Control = 3'b010 	;	
 						endcase	
 					end

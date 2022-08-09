@@ -1,16 +1,16 @@
 module Register_File #	(
-							parameter AdressWidth 	= 	5 		,
-							parameter WIDTH 		= 	32 		,
+							parameter AdressWidth	=	5		,
+							parameter WIDTH 		= 	32		,
 							parameter DEPTH			= 	100
 						)
 						(
 							input wire  [AdressWidth-1:0] 		A1	,
 							input wire  [AdressWidth-1:0] 		A2	,
 							input wire  [AdressWidth-1:0] 		A3	,
-							input wire  [WIDTH-1:0] 			WD3	,
-							input wire 							WE3 ,
-							input wire 							CLK ,
-							input wire 							RST ,
+							input wire  [WIDTH-1:0]				WD3	,
+							input wire							WE3	,
+							input wire							CLK	,
+							input wire							RST	,
 							
 							output wire 	[WIDTH-1:0] 		RD1	,
 							output wire 	[WIDTH-1:0] 		RD2	

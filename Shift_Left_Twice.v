@@ -1,4 +1,4 @@
-module Shift_Left_Twice # 	(
+module Shift_Left_Twice #	(
 								parameter Data_Width 	= 32
 							)
 							(

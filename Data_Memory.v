@@ -1,21 +1,21 @@
 module Data_Memory #	(
 							parameter AdressWidth 	= 	32 					,
-							parameter WIDTH 		= 	32 					,
+							parameter WIDTH			= 	32 					,
 							parameter DEPTH			= 	100
 						)
 						(
 							input 	wire 	[AdressWidth-1:0] 	A 			,
 							input 	wire 	[WIDTH-1:0] 		WD 			,
-							input 	wire 						WE			,
-							input 	wire 						CLK 		,
-							input 	wire 						RST 		,
+							input 	wire						WE			,
+							input 	wire						CLK 		,
+							input 	wire						RST 		,
 							
-							output 		 	[WIDTH-1:0] 		RD 			,
+							output			[WIDTH-1:0] 		RD 			,
 							output			[(WIDTH/2)-1:0] 	TestValue	 
 
 						);
 	reg  	[WIDTH-1:0] DATA_MEM [DEPTH-1:0] 	;
-	integer i	 								;
+	integer i									;
 	
 	always @(posedge CLK , negedge RST)
 		begin
